@@ -2,4 +2,5 @@ captures/
 local/
 manifests/
 .venv
+.csv
 __pycache__/
