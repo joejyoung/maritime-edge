@@ -2,5 +2,5 @@ captures/
 local/
 manifests/
 .venv
-.csv
+scripts/dope_book.csv
 __pycache__/
