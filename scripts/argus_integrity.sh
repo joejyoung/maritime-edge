@@ -254,12 +254,38 @@ stage_filesystem() {
         ok "no ext4 errors in kernel log"
     fi
 
-    if grep -qiE 'I/O error|blk_update_request|nvme.*(reset|timeout|abort)' <<<"$kmsg"; then
-        fail "block layer errors in kernel log:"
-        grep -iE 'I/O error|blk_update_request|nvme.*(reset|timeout|abort)' <<<"$kmsg" \
-            | head -8 | while read -r l; do detail "$l"; done
+    # Hard errors: the I/O did not complete. These threaten data.
+    local hard
+    hard="$(grep -iE 'I/O error|blk_update_request|nvme.*(resetting controller|Abort status|controller is down)' <<<"$kmsg")"
+    if [[ -n "$hard" ]]; then
+        fail "unrecovered block I/O errors in kernel log:"
+        head -8 <<<"$hard" | while read -r l; do detail "$l"; done
     else
-        ok "no block I/O errors in kernel log"
+        ok "no unrecovered block I/O errors in kernel log"
+    fi
+
+    # Recovered timeouts: 'completion polled' means nvme_timeout() found the
+    # completion already queued — the I/O landed, the interrupt was late. This
+    # is a latency fault, not a data fault, so it warns rather than fails.
+    local polled npolled last_polled age_note=""
+    polled="$(grep -iE 'nvme.*timeout, completion polled' <<<"$kmsg")"
+    if [[ -n "$polled" ]]; then
+        npolled="$(wc -l <<<"$polled")"
+        # Kernel-log entries persist for the whole boot; without an age the same
+        # lines would be re-reported indefinitely after they stopped occurring.
+        last_polled="$(sed -n 's/^\[ *\([0-9]*\)\..*/\1/p' <<<"$polled" | tail -1)"
+        if [[ -n "$last_polled" ]] && [[ -r /proc/uptime ]]; then
+            local up mins
+            up="$(cut -d. -f1 /proc/uptime)"
+            mins=$(( (up - last_polled) / 60 ))
+            age_note=" — most recent ${mins} min ago"
+        fi
+        warn "$npolled recovered NVMe timeout(s) this boot${age_note}"
+        detail "'completion polled' = the I/O completed; no data was lost"
+        detail "a 30 s stall will still disrupt a capture session"
+        head -4 <<<"$polled" | while read -r l; do detail "$l"; done
+    else
+        ok "no NVMe timeouts this boot"
     fi
 }
 
