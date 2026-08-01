@@ -197,8 +197,9 @@ else
 fi
 
 # Shared libraries — catches partial installs the package DB may misreport.
+LDCONFIG_CACHE="$(ldconfig -p 2>/dev/null)"
 for lib in libnvinfer.so libcudnn.so libcudart.so; do
-  if ldconfig -p 2>/dev/null | grep -q "$lib"; then ok "linker resolves $lib"
+  if grep -q "$lib" <<<"$LDCONFIG_CACHE"; then ok "linker resolves $lib"
   else bad "linker cannot resolve $lib"; fi
 done
 
