@@ -388,5 +388,18 @@ Enforced throughout this repository:
 
 ## License
 
-Not yet licensed. This repository is private pending review; a license will be selected
-before any public release.
+This repository uses a per‑directory licensing model.
+
+Root license: See LICENSE for the terms governing the top‑level code and documentation.
+
+Detector‑related code: Licensed under AGPL‑3.0-only (AGPL-3.0-only.txt).
+
+Datasets, media, and annotations: Licensed under CC BY‑NC‑ND 4.0 (CC-BY-NC-ND-4.0.txt).
+
+Argus instrumentation and capture-chain tools: Licensed under Argus NCND 1.3 (LicenseRef-Argus-NCND-1.3.txt).
+
+Third‑party components: See THIRD_PARTY_NOTICES.md for attribution and upstream license terms.
+
+Each directory contains a LICENSE or LICENSE.txt file specifying the terms applicable to its contents.
+
+No single license applies to the entire repository. Users must consult the license file associated with each component before use, modification, or redistribution.
