@@ -1,0 +1,36 @@
+Files in this directory are licensed under the GNU Affero General Public
+License, version 3.0 only.
+
+SPDX-License-Identifier: AGPL-3.0-only
+
+Full text: ../../LICENSES/AGPL-3.0-only.txt
+
+    Copyright (c) 2026 Joseph Young
+
+    This program is free software: you can redistribute it and/or modify it
+    under the terms of the GNU Affero General Public License as published by
+    the Free Software Foundation, version 3.
+
+    This program is distributed in the hope that it will be useful, but
+    WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero
+    General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+
+WHY AGPL HERE AND NOT ELSEWHERE
+
+Code in this directory imports Ultralytics YOLO (AGPL-3.0). To avoid
+ambiguity about combined-work status, everything that imports a detector
+in-process lives here and is licensed AGPL-3.0-only.
+
+Do not add non-detector code to this directory, and do not copy code from
+here into scripts/. Shared helpers belong in scripts/ and are imported
+upward. Cross-boundary invocation from scripts/ must use a subprocess call,
+not an import.
+
+Note that AGPL section 13 requires offering source to users who interact with
+this software over a network. This repository is not network-facing; keep it
+that way, or comply with section 13.

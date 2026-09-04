@@ -1,0 +1,18 @@
+Files in this directory, EXCEPT those under scripts/analysis/, are licensed
+under the Non-Commercial Research-Only License, No Derivatives, No
+Redistribution, version 1.3.
+
+SPDX-License-Identifier: LicenseRef-Argus-NCND-1.3
+
+Full text: ../LICENSES/LicenseRef-Argus-NCND-1.3.txt
+
+Summary — this is not a substitute for the license text:
+  Permitted     academic research, teaching, reproducibility validation
+  Not permitted commercial use, redistribution, derivative works, ML training
+  Not permitted application to surveillance or identification of persons
+  Required      citation in any publication reporting results
+
+scripts/analysis/ carries its own LICENSE (AGPL-3.0-only) which overrides this
+file for everything beneath it.
+
+Copyright (c) 2026 Joseph Young.

@@ -1,0 +1,35 @@
+Documentation in this directory is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+SPDX-License-Identifier: CC-BY-NC-ND-4.0
+
+Full text: ../LICENSES/CC-BY-NC-ND-4.0.txt
+Human-readable summary: https://creativecommons.org/licenses/by-nc-nd/4.0/
+
+Copyright (c) 2026 Joseph Young.
+
+You may copy and redistribute this material in any medium or format for
+non-commercial purposes, with attribution. You may not distribute modified
+versions.
+
+
+AUTHORSHIP NOTE
+
+Portions of the API and script reference documentation in this directory were
+drafted with the assistance of a large language model and subsequently
+reviewed, corrected, and edited by the author. Copyright protection for
+machine-generated text is unsettled in the United States; the copyright
+asserted here extends to the author's selection, arrangement, correction, and
+editorial contribution.
+
+Documents that are substantially the author's own writing are listed in
+docs/README.md. Where a document is largely unedited generated output, this
+notice should be read as a statement of intent rather than a settled claim of
+exclusive right.
+
+
+CORRECTIONS
+
+The NoDerivatives term prevents redistribution of modified versions. It does
+not prevent you from reporting an error. Corrections are welcome via the
+repository's contact address.

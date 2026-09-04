@@ -1,0 +1,206 @@
+NON-COMMERCIAL RESEARCH-ONLY LICENSE — NO DERIVATIVES, NO REDISTRIBUTION
+Version 1.3 (2026)
+
+SPDX-License-Identifier: LicenseRef-Argus-NCND-1.3
+
+Copyright (c) 2026 Joseph Young. All rights reserved.
+
+
+0. SCOPE
+
+This License governs only those files in this repository that carry the SPDX
+identifier "LicenseRef-Argus-NCND-1.3" in a header comment, or that reside in
+a directory whose LICENSE file names this License.
+
+This License does NOT govern:
+
+  (a) third-party components, which remain under their own licenses. See
+      THIRD_PARTY_NOTICES.md at the repository root;
+
+  (b) files licensed under GNU Affero General Public License v3.0, identified
+      by the SPDX header "AGPL-3.0-only";
+
+  (c) documentation and captured media licensed under Creative Commons
+      Attribution-NonCommercial-NoDerivatives 4.0 International, identified by
+      the SPDX header "CC-BY-NC-ND-4.0";
+
+  (d) datasets obtained from third parties, which remain subject to their
+      original terms of use regardless of any processing or annotation
+      performed by the author.
+
+Where this License conflicts with the license of a third-party component, the
+third-party license controls as to that component.
+
+
+1. DEFINITIONS
+
+"The Work" means the files governed by this License under Section 0.
+
+"You" means the individual or legal entity exercising rights under this
+License.
+
+"Non-commercial" means not primarily intended for or directed toward
+commercial advantage or monetary compensation. Use by a commercial entity is
+not automatically commercial use; use in the development, evaluation, or
+operation of a product or service offered for compensation is.
+
+
+2. PERMITTED USES
+
+Subject to the terms of this License, You may:
+
+  (a) access, read, and execute the Work for academic research, scientific
+      study, teaching, or reproducibility validation;
+
+  (b) make temporary local modifications to the extent necessary to execute
+      the Work in Your environment or to validate results reported by the
+      author;
+
+  (c) quote or reproduce minimal excerpts of the Work as required for academic
+      peer review, scholarly citation, or publication, accompanied by the
+      attribution required under Section 4.
+
+No rights are granted beyond those stated in this Section.
+
+
+3. PROHIBITED USES
+
+You may not:
+
+  (a) use the Work for any commercial purpose as defined in Section 1;
+
+  (b) redistribute, publish, host, mirror, or otherwise make the Work
+      available to any third party, except as permitted under Section 2(c);
+
+  (c) create, publish, or distribute derivative works, adaptations, or
+      translations of the Work, except for the temporary local modifications
+      permitted under Section 2(b);
+
+  (d) incorporate any part of the Work into other software, datasets, models,
+      or systems;
+
+  (e) use the Work, or any output derived from the Work, as training data for
+      machine learning models, or to generate synthetic data;
+
+  (f) sublicense, sell, rent, lease, or otherwise transfer the Work or any
+      rights granted herein;
+
+  (g) remove, obscure, or alter any copyright notice, SPDX identifier, or
+      attribution contained in the Work.
+
+
+4. ATTRIBUTION AND CITATION
+
+Any publication, presentation, or report describing results obtained using
+the Work must cite it. Citation metadata is provided in CITATION.cff at the
+repository root.
+
+
+5. ACCEPTABLE USE
+
+You may not use the Work in any application involving:
+
+  (a) surveillance, tracking, profiling, biometric analysis, or
+      identification of natural persons;
+
+  (b) military, defense, weapons targeting, or intelligence applications;
+
+  (c) medical diagnosis, triage, or clinical decision-making;
+
+  (d) automated decision systems materially affecting an individual's access
+      to housing, employment, credit, insurance, education, or legal
+      outcomes;
+
+  (e) harassment, discrimination, exploitation, or the violation of human
+      rights;
+
+  (f) any activity that violates applicable law, regulation, or the research
+      ethics requirements of Your institution.
+
+For the avoidance of doubt: the Work is a maritime vessel detection and
+imaging system. Detection, classification, and tracking of vessels as
+physical objects is a permitted use. Section 5(a) restricts application to
+natural persons, including persons aboard or associated with a vessel.
+
+This Section is fixed at the version stated above. Revisions to acceptable
+use apply only to subsequent versions of this License and do not modify Your
+rights under this version.
+
+
+6. PATENTS
+
+No patent rights are granted under this License, whether expressly, by
+implication, by estoppel, or otherwise.
+
+If You institute patent litigation against the author or any contributor
+alleging that the Work, or Your use of it, infringes a patent, all rights
+granted to You under this License terminate as of the date such litigation is
+filed.
+
+
+7. NO WARRANTY
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND NON-INFRINGEMENT.
+
+The Work documents hardware faults, measurement limitations, and unresolved
+defects. No representation is made that any measurement, figure, or
+conclusion contained in the Work is correct, complete, or suitable for any
+purpose.
+
+
+8. LIMITATION OF LIABILITY
+
+IN NO EVENT SHALL THE AUTHOR OR ANY CONTRIBUTOR BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
+OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE WORK OR THE USE OR
+OTHER DEALINGS IN THE WORK, INCLUDING DIRECT, INDIRECT, INCIDENTAL,
+CONSEQUENTIAL, SPECIAL, OR EXEMPLARY DAMAGES.
+
+
+9. TERMINATION
+
+Any breach of this License terminates all rights granted to You automatically
+and without notice. Upon termination You must cease all use of the Work and
+destroy all copies in Your possession.
+
+Sections 7, 8, and 10 survive termination.
+
+
+10. GOVERNING LAW AND JURISDICTION
+
+This License is governed by the laws of the State of Washington, United
+States, without regard to conflict-of-law principles. Any dispute arising
+under this License shall be brought exclusively in the state or federal
+courts located in King County, Washington.
+
+
+11. SEVERABILITY
+
+If any provision of this License is held unenforceable, that provision shall
+be reformed to the minimum extent necessary to make it enforceable, and the
+remaining provisions shall remain in full force and effect.
+
+
+12. PLATFORM TERMS
+
+Where the Work is hosted on a platform whose terms of service grant platform
+users rights to view, fork, or copy public repositories, those platform terms
+operate independently of this License. Hosting the Work on such a platform is
+not a waiver of any restriction in this License, but the author acknowledges
+that platform-granted rights may not be defeated by it.
+
+
+13. PERMISSIONS BEYOND THIS LICENSE
+
+Rights not granted here — including commercial use, redistribution, and
+derivative works — may be available by written agreement. Contact the author
+via the repository's listed contact address.
+
+
+14. ENTIRE AGREEMENT
+
+This License constitutes the entire agreement between You and the author
+regarding the Work and supersedes all prior understandings. It supersedes
+version 1.2 of this License for all files bearing the 1.3 identifier.
