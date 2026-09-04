@@ -1,0 +1,48 @@
+maritime-edge — LICENSING MAP
+
+This repository is multi-licensed by directory. There is no single license
+covering the whole tree. Full license texts are in LICENSES/.
+
+  PATH                     LICENSE                        SPDX
+  ----------------------------------------------------------------------------
+  scripts/                 Non-Commercial Research-Only,  LicenseRef-Argus-
+    (except analysis/)     No Derivatives, v1.3           NCND-1.3
+
+  scripts/analysis/        GNU Affero GPL v3.0            AGPL-3.0-only
+
+  docs/                    CC Attribution-NonCommercial-  CC-BY-NC-ND-4.0
+                           NoDerivatives 4.0 Intl
+
+  root files               LicenseRef-Argus-NCND-1.3      (see below)
+  (README, requirements.txt, .gitignore)
+
+A LICENSE file inside a directory overrides this map for files beneath it.
+Every source file carries an SPDX-License-Identifier header stating its
+license; the header is authoritative for that file.
+
+
+WHY scripts/analysis/ IS SEPARATE
+
+chroma_sweep.py imports Ultralytics YOLO, which is licensed AGPL-3.0. The
+Ultralytics authors assert that importing the package creates a combined work
+subject to the AGPL. That reading is contested for Python imports but is
+enforced in practice, so this repository treats it as binding and isolates all
+detector-importing code under scripts/analysis/ under the AGPL.
+
+Code under scripts/ outside analysis/ does not import Ultralytics or any other
+copyleft dependency. Dependencies run one direction only: scripts/analysis/
+may import from scripts/; scripts/ must not import from scripts/analysis/.
+
+
+THIRD-PARTY COMPONENTS
+
+See THIRD_PARTY_NOTICES.md. Datasets obtained from third parties remain
+subject to their original terms regardless of any annotation or processing
+performed here.
+
+
+CITATION
+
+See CITATION.cff.
+
+Copyright (c) 2026 Joseph Young.
